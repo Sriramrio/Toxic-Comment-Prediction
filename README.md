@@ -1,76 +1,103 @@
-# 🛡️ Toxic Comment Prediction
+# 🌟 Toxic Command Detection  
 
-## 📌 Overview
-**Toxic Comment Prediction** is a machine learning project that automatically detects and classifies toxic comments in online platforms.  
-It helps moderate content by identifying abusive, threatening, or harmful language to ensure a safe and respectful online environment.
+*A Python-powered project utilizing Machine Learning and Django to detect and mitigate harmful commands.*  
 
 ---
 
-## 🎯 Problem Statement
-Online platforms face a major challenge in moderating **harmful and offensive comments**.  
-Manual moderation is:
-- Time-consuming
-- Prone to human bias
-- Difficult to scale for large volumes of user-generated content
+## 🚀 Overview  
+**Toxic Command Detection** is a cutting-edge solution designed to identify toxic or abusive commands using trained machine learning models. With a user-friendly web interface powered by Django, this project bridges machine learning and web technologies for real-time detection.  
 
 ---
 
-## 💡 Proposed Solution
-Our system uses **Natural Language Processing (NLP)** and **Machine Learning** techniques to:
-- Preprocess and clean comment text
-- Extract meaningful features
-- Classify comments into toxic and non-toxic categories
-- Support multiple subcategories like *threats, insults, hate speech, and harassment*
+## ✨ Features  
+✔️ **Toxicity Detection**: Identify and flag harmful commands instantly.  
+✔️ **Interactive Web Interface**: Simple and intuitive design for easy use.  
+✔️ **Customizable Model**: Trained using Jupyter Notebook for flexibility.  
+✔️ **Scalable**: Django-powered backend supports extensibility.  
 
 ---
 
-## 🚀 Key Features
-✅ Real-time detection of toxic comments  
-✅ Multi-label classification (toxic, severe toxic, obscene, threat, insult, identity hate)  
-✅ Clean and preprocess raw text data automatically  
-✅ Trained on large-scale datasets for higher accuracy  
-✅ Can be integrated with websites, forums, and chat systems
+## 🛠️ Technologies  
+- **Python** 🐍: Core language for implementation.  
+- **Jupyter Notebook** 📓: Dataset preprocessing and ML training.  
+- **Django** 🌐: Framework for building the web interface.  
 
 ---
 
-## 🛠️ Tech Stack
-### **Languages & Frameworks**
-- Python 3.9
-- Pandas, NumPy
-- Scikit-learn
-- TensorFlow / Keras
-- NLTK / spaCy
-
-### **Dataset**
-- Kaggle’s *Toxic Comment Classification Challenge* dataset
-
----
-
-## 📂 Project Workflow
-1. **Data Collection** – Gather toxic and non-toxic comment data  
-2. **Data Preprocessing** – Remove punctuation, stopwords, lowercase text, lemmatization  
-3. **Feature Extraction** – TF-IDF, Bag of Words, or word embeddings  
-4. **Model Training** – Logistic Regression, Random Forest, or Neural Networks  
-5. **Evaluation** – Accuracy, Precision, Recall, F1-score  
-6. **Deployment** – Integrate with a web app or moderation system
+## 📂 Project Structure  
+```plaintext  
+📦 Toxic Command Detection  
+├── 📁 dataset/             # Dataset used for training  
+├── 📁 notebooks/           # Jupyter notebooks for ML workflows  
+├── 📁 django_project/      # Django application files  
+├── 📄 requirements.txt     # Python dependencies  
+└── README.md               # Project documentation  
+```  
 
 ---
 
-## 📊 Example Model Performance
-| Model                | Accuracy | F1-Score |
-|----------------------|----------|----------|
-| Logistic Regression  | 91%      | 0.89     |
-| LSTM (Deep Learning) | 94%      | 0.92     |
+## 📖 Getting Started  
+
+### 🔧 Prerequisites  
+Ensure you have the following installed:  
+- Python 3.8+  
+- pip package manager  
+- Virtual Environment (recommended)  
+
+### ⚙️ Installation  
+1. **Clone the Repository**:  
+   ```bash  
+   git clone <repository-url>  
+   cd Toxic-Command-Detection  
+   ```  
+2. **Set up a Virtual Environment**:  
+   ```bash  
+   python -m venv env  
+   source env/bin/activate  # On Windows, use `env\Scripts\activate`  
+   ```  
+3. **Install Dependencies**:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
+4. **Run Migrations**:  
+   ```bash  
+   python manage.py migrate  
+   ```  
+5. **Start the Server**:  
+   ```bash  
+   python manage.py runserver  
+   ```  
 
 ---
 
-## 📜 License
-This project is open-source and available for educational purposes.
+## 🎯 Usage  
+1. Open your browser and navigate to: `http://127.0.0.1:8000`.  
+2. Use the web interface to upload commands or text for toxicity analysis.  
+3. View real-time results on the dashboard.  
 
 ---
 
-## 👨‍💻 Authors
-- **Sriram P**  
-Department of Computer Science & Engineering  
-S.K.P. Engineering College
+## 📊 Screenshots  
+  
+![screenshot](https://github.com/user-attachments/assets/91f04578-552a-41c3-b315-45a3ade74e3a)
 
+---
+
+## 🤝 Contributions  
+We welcome contributions from the community!  
+
+- Fork the repository  
+- Create a new branch (`git checkout -b feature-branch`)  
+- Commit changes (`git commit -m 'Add new feature'`)  
+- Push to the branch (`git push origin feature-branch`)  
+- Submit a pull request  
+
+---
+
+## 📜 License  
+This project is licensed under the [MIT License](LICENSE).  
+
+---
+
+## 💡 Acknowledgements  
+Special thanks to all contributors and the open-source community for their support.  
